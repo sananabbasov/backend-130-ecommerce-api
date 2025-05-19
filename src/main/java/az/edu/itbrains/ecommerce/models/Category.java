@@ -20,6 +20,8 @@ public class Category {
     private Long id;
     private String name;
     private String photoUrl;
+    private boolean deleted;
+    private boolean navbar;
 
     @OneToMany(mappedBy = "category")
     private List<Product> products = new ArrayList<>();
